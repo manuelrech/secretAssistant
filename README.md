@@ -1,4 +1,5 @@
 # secretAssistant
+Educational purposes only ;)
 
 ![Demo](demo/smartAssistantDemo.gif)
 
@@ -36,7 +37,12 @@
    git clone https://github.com/manuelrech/secretAssistant.git
    cd secretAssistant
    ```
-2. Install dependencies
+2. Create a virtual environment and activate it
+   ```sh
+   python3 -m venv .secretAss
+   source .secretAss/bin/activate
+   ```
+3. Install dependencies
    ```sh
    pip install -r requirements.txt
    ```
@@ -57,3 +63,34 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 For any questions or inquiries, please contact rech.manuel.27@gmail.com
+
+## Extra for Mac users
+
+
+You can have an undercover app that runs all this in the background and logs everything in a log file.
+
+![app](demo/automator_application.png)
+
+### Instructions
+1. You should create a file called `run.sh` like the following (change the paths accordingly, in case I will create a version with relative paths).
+   ```sh
+   #!/bin/bash
+
+   # Define the log file path with timestamp
+   LOG_FILE="/Users/manuel/dev/secretAss/logs/log_file_$(date +%Y%m%d_%H%M%S).txt"
+
+   # Ensure the Python script has the correct environment
+   source /Users/Manuel/dev/secretAss/.smartAss/bin/activate
+
+   # Run the Python script and redirect both stdout and stderr to the log file
+   /Users/Manuel/dev/smartAss/.secretAss/bin/python /Users/Manuel/dev/secretAss/main.py > "$LOG_FILE" 2>&1
+   ```
+2. Create a folder called `logs`.
+3. Open Automator.
+4. Click new document.
+5. Choose application.
+6. Select the action 'Run Shell Script'
+7. Paste the path to your run file. (For me it is '/Users/Manuel/dev/smartAss/run_script.sh')
+8. Save your application and run it!
+
+Note: I am saying for Mac because it is what I use, but for sure that is also available somehow on windows, feel free to contribute. 
