@@ -1,0 +1,5 @@
+.smartAss/
+logs/
+__pycache__/
+run_script.sh
+.env
