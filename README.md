@@ -1,6 +1,6 @@
 # secretAssistant
 
-![Demo](video_demo/smartAssistantDemo.gif)
+![Demo](demo/smartAssistantDemo.gif)
 
 `secretAssistant` is a productivity tool that leverages the OpenAI API to provide quick and concise answers to your clipboard content. By utilizing simple keyboard commands, you can query, refine, and retrieve detailed responses from GPT-4o.
 
