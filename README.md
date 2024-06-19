@@ -1,5 +1,7 @@
 # secretAssistant
 
+![Demo](video_demo/smartAssistantDemo.gif)
+
 `secretAssistant` is a productivity tool that leverages the OpenAI API to provide quick and concise answers to your clipboard content. By utilizing simple keyboard commands, you can query, refine, and retrieve detailed responses from GPT-4o.
 
 ## Features
@@ -33,3 +35,25 @@
    ```sh
    git clone https://github.com/manuelrech/secretAssistant.git
    cd secretAssistant
+   ```
+2. Install dependencies
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Set up your environment variables:
+   - Create an `.env` file in the root directory of the project.
+   - add your OpenAI key to the `.env` file.
+   ```env
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
+## Usage
+```sh
+python3 main.py
+````
+
+## Contributions
+Contributions are welcome! Please open an issue or submit a pull request for any features, bug fixes, or enhancements.
+
+## Contact
+For any questions or inquiries, please contact rech.manuel.27@gmail.com
