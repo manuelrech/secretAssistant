@@ -1,5 +1,5 @@
 # secretAssistant
-Educational purposes only ;)
+Educational purposes only ;) - please leave a star if it helps you!
 
 ![Demo](demo/smartAssistantDemo.gif)
 
