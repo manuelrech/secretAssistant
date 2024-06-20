@@ -40,7 +40,6 @@ Educational purposes only ;) - please leave a star if it helps you!
 2. Create a virtual environment and activate it
    ```sh
    python3 -m venv .secretAss
-   source .secretAss/bin/activate
    ```
 3. Install dependencies
    ```sh
